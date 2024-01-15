@@ -13,8 +13,8 @@
                 <h1>Edit User</h1>
                 <div class="section-header-breadcrumb">
                     <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
-                    <div class="breadcrumb-item"><a href="#">Users</a></div>
-                    <div class="breadcrumb-item">Edit User</div>
+                    <div class="breadcrumb-item"><a href="#">Subjects</a></div>
+                    <div class="breadcrumb-item">Edit Subject</div>
                 </div>
             </div>
 
@@ -47,8 +47,8 @@
                                     class="form-control @error('lecturer_name')
                                     is-invalid
                                 @enderror"
-                                    name="name" value="{{ $subject->lecturer_name }}">
-                                @error('lecture_name')
+                                    name="lecturer_name" value="{{ $subject->lecturer_name }}">
+                                @error('lecturer_name')
                                     <div class="invalid-feedback">
                                         {{ $message }}
                                     </div>
@@ -70,7 +70,7 @@
                             <div class="form-group">
                                 <label>SKS</label>
                                 <input type="text"
-                                    class="form-control @error('semester')
+                                    class="form-control @error('sks')
                                     is-invalid
                                 @enderror"
                                     name="sks" value="{{ $subject->sks }}">
@@ -82,7 +82,7 @@
                             </div>                                             
                             <div class="form-group">
                                 <label>Academic Year</label>
-                                <input type="academic_year"
+                                <input type="text"
                                     class="form-control @error('academic_year')
                                     is-invalid
                                 @enderror"

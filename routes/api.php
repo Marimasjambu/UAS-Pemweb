@@ -3,6 +3,7 @@
 use App\Http\Controllers\Api\AuthController;
 use App\Http\Controllers\Api\ScheduleController;
 use App\Http\Controllers\Api\SubjectController;
+use App\Http\Controllers\Api\PegawaiController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 /*
@@ -26,4 +27,6 @@ Route::post('/logout', [AuthController::class, 'logout'])
 Route::apiResource('schedules', ScheduleController::class)
     ->middleware('auth:sanctum');
 Route::apiResource('subjects', SubjectController::class)
+    ->middleware('auth:sanctum');
+Route::apiResource('pegawais', PegawaiController::class)
     ->middleware('auth:sanctum');

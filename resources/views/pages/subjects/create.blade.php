@@ -46,7 +46,7 @@
                                     class="form-control @error('lecturer_id')
                                     is-invalid
                                 @enderror"
-                                    name="lecture_id">
+                                    name="lecturer_id">
                                 @error('lecturer_id')
                                     <div class="invalid-feedback">
                                         {{ $message }}
@@ -59,7 +59,7 @@
                                     class="form-control @error('lecturer_name')
                                     is-invalid
                                 @enderror"
-                                    name="name">
+                                    name="lecturer_name">
                                 @error('lecturer_name')
                                     <div class="invalid-feedback">
                                         {{ $message }}
@@ -82,7 +82,7 @@
                             <div class="form-group">
                                 <label>SKS</label>
                                 <input type="text"
-                                    class="form-control @error('semester')
+                                    class="form-control @error('sks')
                                     is-invalid
                                 @enderror"
                                     name="sks">
@@ -111,7 +111,7 @@
                                     class="form-control @error('code')
                                     is-invalid
                                 @enderror"
-                                    name="name">
+                                    name="code">
                                 @error('code')
                                     <div class="invalid-feedback">
                                         {{ $message }}
@@ -124,7 +124,7 @@
                                     class="form-control @error('description')
                                     is-invalid
                                 @enderror"
-                                    name="name">
+                                    name="description">
                                 @error('description')
                                     <div class="invalid-feedback">
                                         {{ $message }}

@@ -29,7 +29,7 @@ class StoreSubjectRequest extends FormRequest
             'sks' => 'integer',
             'academic_year' => 'string|max:9',
             'code' => 'required|string|max:8',
-            'description' => 'string'
+            'description' => 'required|string'
         ];
     }
 }
